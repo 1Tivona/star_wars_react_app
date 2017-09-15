@@ -72,24 +72,19 @@ class App extends Component {
       return(
         <div key= {vehicles.name}>
         <div className="card">
+        <div className="card-block">
+
           <h1> Vehicle: {vehicles.name}</h1>
           <h2> Model: {vehicles.model}</h2>
           <h2> Specs </h2>
-          <hr/>
           <h3> Manufacturer: {vehicles.manufacturer}</h3>
-          <hr/>
           <h3> Class: {vehicles.vehicle_class}</h3>
-          <hr/>
           <h3> Passengers: {vehicles.passengers}</h3>
-          <hr/>
           <h3> Crew: {vehicles.crew}</h3>
-          <hr/>
           <h3> Length: {vehicles.length}</h3>
-          <hr/>
           <h3> Max Speed: {vehicles.max_atmosphering_speed}</h3>
-          <hr/>
           <h3> Cargo Capacity: {vehicles.cargo_capacity}</h3>
-
+          </div>
         </div>
         </div>
       )
@@ -113,6 +108,7 @@ class App extends Component {
             <input type="text" name="pilot" />
             <br/>
             <br/>
+            <div className="form-addition">{this.state.pilot}</div>
             <input className="button" type="submit" value="Submit"/>
           </div>
       </div>
