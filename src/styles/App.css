@@ -4,7 +4,8 @@
 
 .card{
   margin: 30px;
-  width: 20rem;
+  padding: 10px;
+  width: 30rem;
 }
 
 .form{

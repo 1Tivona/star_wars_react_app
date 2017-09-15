@@ -71,21 +71,20 @@ class App extends Component {
     let vehicles = allVehicles.map((vehicles) => {
       return(
         <div key= {vehicles.name}>
-        <div className="card">
-        <div className="card-block">
-
-          <h1> Vehicle: {vehicles.name}</h1>
+          <div className="card">
+          <h1 className="card-title"> Vehicle: {vehicles.name}</h1>
           <h2> Model: {vehicles.model}</h2>
-          <h2> Specs </h2>
-          <h3> Manufacturer: {vehicles.manufacturer}</h3>
-          <h3> Class: {vehicles.vehicle_class}</h3>
-          <h3> Passengers: {vehicles.passengers}</h3>
-          <h3> Crew: {vehicles.crew}</h3>
-          <h3> Length: {vehicles.length}</h3>
-          <h3> Max Speed: {vehicles.max_atmosphering_speed}</h3>
-          <h3> Cargo Capacity: {vehicles.cargo_capacity}</h3>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Specs</li>
+              <li className="list-group-item"> Manufacturer: {vehicles.manufacturer}</li>
+              <li className="list-group-item"> Class: {vehicles.vehicle_class}</li>
+              <li className="list-group-item"> Passengers: {vehicles.passengers}</li>
+              <li className="list-group-item"> Crew: {vehicles.crew}</li>
+              <li className="list-group-item"> Length: {vehicles.length}</li>
+              <li className="list-group-item"> Max Speed: {vehicles.max_atmosphering_speed}</li>
+              <li className="list-group-item"> Cargo Capacity: {vehicles.cargo_capacity}</li>
+            </ul>
           </div>
-        </div>
         </div>
       )
     })
